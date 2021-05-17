@@ -1,0 +1,9 @@
+.poljeIspravno {
+    -fx-control-inner-background: greenyellow;
+}
+.poljeNijeIspravno {
+    -fx-control-inner-background: lightpink;
+}
+.poljeProvjeraUToku {
+    -fx-control-inner-background: yellow;
+}

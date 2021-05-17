@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rs.zadaca5.Controller">
+    <stylesheets>
+        <URL value="@/css/form.css" />
+    </stylesheets>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu fx:id="menuOptions" mnemonicParsing="false" text="Opcije">
+               <items>
+                  <RadioMenuItem fx:id="menuDb" mnemonicParsing="false" onAction="#switchDb" selected="true" text="SQLite" />
+                  <RadioMenuItem fx:id="menuXml" mnemonicParsing="false" onAction="#switchXml" text="XML" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="ownersTab" text="Vlasnici">
+              <content>
+                  <BorderPane>
+                     <top>
+                        <HBox prefHeight="34.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="Pretraga:">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <TextField alignment="CENTER">
+                                 <opaqueInsets>
+                                    <Insets top="5.0" />
+                                 </opaqueInsets>
+                              </TextField>
+                              <Button fx:id="tbAddOwner" mnemonicParsing="false" onAction="#addOwnerAction" />
+                              <Button fx:id="tbRemoveOwner" mnemonicParsing="false" onAction="#removeOwnerAction" />
+                              <Button fx:id="tbEditOwner" mnemonicParsing="false" onAction="#editOwnerAction" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding>
+                        </HBox>
+                     </top>
+                     <opaqueInsets>
+                        <Insets top="5.0" />
+                     </opaqueInsets>
+                     <center>
+                        <TableView fx:id="tableOwners" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <columns>
+                            <TableColumn fx:id="colOwnerId" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="colNameSurname" prefWidth="121.0" text="Ima i prezime" />
+                              <TableColumn fx:id="colJmbg" prefWidth="124.0" text="JMBG" />
+                          </columns>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </center></BorderPane>
+              </content>
+          </Tab>
+          <Tab fx:id="vehiclesTab" text="Vozila">
+              <content>
+                  <BorderPane>
+                      <top>
+                          <HBox prefHeight="34.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
+                              <children>
+                                  <Label text="Pretraga:">
+                                      <padding>
+                                          <Insets top="5.0" />
+                                      </padding>
+                                  </Label>
+                                  <TextField alignment="CENTER">
+                                      <opaqueInsets>
+                                          <Insets top="5.0" />
+                                      </opaqueInsets>
+                                  </TextField>
+                                  <Button fx:id="tbAddVehicle" mnemonicParsing="false" onAction="#addVehicleAction" />
+                                  <Button fx:id="tbRemoveVehicle" mnemonicParsing="false" onAction="#removeVehicleAction" />
+                                  <Button fx:id="tbEditVehicle" mnemonicParsing="false" onAction="#editVehicleAction" />
+                              </children>
+                              <BorderPane.margin>
+                                  <Insets />
+                              </BorderPane.margin>
+                              <padding>
+                                  <Insets top="5.0" />
+                              </padding>
+                          </HBox>
+                      </top>
+                      <opaqueInsets>
+                          <Insets top="5.0" />
+                      </opaqueInsets>
+                      <center>
+                          <TableView fx:id="tableVehicles" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                              <columns>
+                                  <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                                  <TableColumn fx:id="colManufacturer" prefWidth="121.0" text="Proizvođači" />
+                                  <TableColumn fx:id="colModel" prefWidth="105.0" text="Model" />
+                              <TableColumn fx:id="colChasisNumber" prefWidth="107.0" text="Broj šasije" />
+                              <TableColumn fx:id="colPlateNumber" prefWidth="103.0" text="Broj tablica" />
+                              </columns>
+                              <opaqueInsets>
+                                  <Insets />
+                              </opaqueInsets>
+                          </TableView>
+                      </center></BorderPane>
+              </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

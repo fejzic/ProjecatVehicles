@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_191" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="ba.unsa.etf.rs.zadaca5.Place">
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="name">
+     <string>Sarajevo</string>
+    </void>
+    <void property="postalNumber">
+     <string>71000</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="ba.unsa.etf.rs.zadaca5.Place">
+    <void property="id">
+     <int>2</int>
+    </void>
+    <void property="name">
+     <string>Tuzla</string>
+    </void>
+    <void property="postalNumber">
+     <string>72000</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

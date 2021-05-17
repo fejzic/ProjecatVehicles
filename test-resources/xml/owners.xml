@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_191" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="ba.unsa.etf.rs.zadaca5.Owner">
+    <void property="livingAddress">
+     <string>Zmaja od Bosne bb</string>
+    </void>
+    <void property="dateOfBirthDays">
+     <long>1</long>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="name">
+     <string>Meho</string>
+    </void>
+    <void property="parentName">
+     <string>Mehaga</string>
+    </void>
+    <void property="jmbg">
+     <string>123453452345</string>
+    </void>
+    <void property="livingPlace">
+     <object class="ba.unsa.etf.rs.zadaca5.Place">
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="name">
+       <string>Sarajevo</string>
+      </void>
+      <void property="postalNumber">
+       <string>71000</string>
+      </void>
+     </object>
+    </void>
+    <void property="placeOfBirth">
+     <object class="ba.unsa.etf.rs.zadaca5.Place">
+      <void property="id">
+       <int>1</int>
+      </void>
+      <void property="name">
+       <string>Sarajevo</string>
+      </void>
+      <void property="postalNumber">
+       <string>71000</string>
+      </void>
+     </object>
+    </void>
+    <void property="surname">
+     <string>Mehic</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
